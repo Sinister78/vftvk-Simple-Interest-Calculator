@@ -1,4 +1,47 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+}
 
+h1 {color: grey;
+    font-family: verdana;
+    font-size: 26px;
+}
 
+#rate {
+    width: 90px;
+}
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 15% 30% 55%;
+    grid-template-rows: 100px 50px 50px 50px 50px auto 50px;
+    grid-template-areas:
+        "row1 row1 row1"
+        ". row2a row2b"
+        ". row3a row3b"
+        ". row4a row4b"
+        ". row5 ."
+        ". row6 row6"
+        "row7 row7 row7";
+    align-items: center;
+}
+
+.row1 { grid-area: 1 / 1 / 2 / 4 }
+.row2a { grid-area: 2 / 2 / 3 / 3 }
+.row2b { grid-area: 2 / 3 / 3 / 4 }
+.row3a { grid-area: 3 / 2 / 4 / 3 }
+.row3b { grid-area: 3 / 3 / 4 / 4 }
+.row4a { grid-area: 4 / 2 / 5 / 3 }
+.row4b { grid-area: 4 / 3 / 5 / 4 }
+.row5 { grid-area: 5 / 2 / 6 / 4 }
+.row6 { grid-area: 6 / 2 / 7 / 4 }
+.row7 { grid-area: 7 / 1 / 8 / 4 }
